@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Frame101
 //
-//  Created by muzna on 2020/08/22.
+//  Created by eddie on 2020/08/22.
 //  Copyright © 2020 eddie. All rights reserved.
 //
 
