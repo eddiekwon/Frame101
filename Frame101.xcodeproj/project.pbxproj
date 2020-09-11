@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C64D527250BB3500071DCDF /* Frame101Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C64D526250BB3500071DCDF /* Frame101Tests.swift */; };
 		6C83570D24F0A8710083141C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83570C24F0A8710083141C /* AppDelegate.swift */; };
 		6C83571124F0A8710083141C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83571024F0A8710083141C /* ViewController.swift */; };
 		6C83571424F0A8710083141C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C83571224F0A8710083141C /* Main.storyboard */; };
@@ -15,7 +16,20 @@
 		6C83572124F0AC9A0083141C /* RotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C83572024F0AC9A0083141C /* RotateViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6C64D529250BB3500071DCDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C83570124F0A8710083141C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C83570824F0A8710083141C;
+			remoteInfo = Frame101;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6C64D524250BB3500071DCDF /* Frame101Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Frame101Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C64D526250BB3500071DCDF /* Frame101Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame101Tests.swift; sourceTree = "<group>"; };
+		6C64D528250BB3500071DCDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C83570924F0A8710083141C /* Frame101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frame101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C83570C24F0A8710083141C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C83571024F0A8710083141C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C64D521250BB3500071DCDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C83570624F0A8710083141C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C64D525250BB3500071DCDF /* Frame101Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6C64D526250BB3500071DCDF /* Frame101Tests.swift */,
+				6C64D528250BB3500071DCDF /* Info.plist */,
+			);
+			path = Frame101Tests;
+			sourceTree = "<group>";
+		};
 		6C83570024F0A8710083141C = {
 			isa = PBXGroup;
 			children = (
 				6C83570B24F0A8710083141C /* Frame101 */,
+				6C64D525250BB3500071DCDF /* Frame101Tests */,
 				6C83570A24F0A8710083141C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				6C83570924F0A8710083141C /* Frame101.app */,
+				6C64D524250BB3500071DCDF /* Frame101Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +102,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6C64D523250BB3500071DCDF /* Frame101Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C64D52D250BB3500071DCDF /* Build configuration list for PBXNativeTarget "Frame101Tests" */;
+			buildPhases = (
+				6C64D520250BB3500071DCDF /* Sources */,
+				6C64D521250BB3500071DCDF /* Frameworks */,
+				6C64D522250BB3500071DCDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C64D52A250BB3500071DCDF /* PBXTargetDependency */,
+			);
+			name = Frame101Tests;
+			productName = Frame101Tests;
+			productReference = 6C64D524250BB3500071DCDF /* Frame101Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6C83570824F0A8710083141C /* Frame101 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C83571D24F0A8730083141C /* Build configuration list for PBXNativeTarget "Frame101" */;
@@ -97,6 +147,10 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = eddie;
 				TargetAttributes = {
+					6C64D523250BB3500071DCDF = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 6C83570824F0A8710083141C;
+					};
 					6C83570824F0A8710083141C = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -116,11 +170,19 @@
 			projectRoot = "";
 			targets = (
 				6C83570824F0A8710083141C /* Frame101 */,
+				6C64D523250BB3500071DCDF /* Frame101Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6C64D522250BB3500071DCDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C83570724F0A8710083141C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +196,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C64D520250BB3500071DCDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C64D527250BB3500071DCDF /* Frame101Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C83570524F0A8710083141C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +215,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C64D52A250BB3500071DCDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C83570824F0A8710083141C /* Frame101 */;
+			targetProxy = 6C64D529250BB3500071DCDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6C83571224F0A8710083141C /* Main.storyboard */ = {
@@ -166,6 +244,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6C64D52B250BB3500071DCDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L938T5Q7J8;
+				INFOPLIST_FILE = Frame101Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Frame101Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frame101.app/Frame101";
+			};
+			name = Debug;
+		};
+		6C64D52C250BB3500071DCDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L938T5Q7J8;
+				INFOPLIST_FILE = Frame101Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Frame101Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frame101.app/Frame101";
+			};
+			name = Release;
+		};
 		6C83571B24F0A8730083141C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,6 +437,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C64D52D250BB3500071DCDF /* Build configuration list for PBXNativeTarget "Frame101Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C64D52B250BB3500071DCDF /* Debug */,
+				6C64D52C250BB3500071DCDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6C83570424F0A8710083141C /* Build configuration list for PBXProject "Frame101" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
