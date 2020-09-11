@@ -12,7 +12,8 @@ jobs:
     steps:
       - checkout
       #- run: pod install # Install CocoaPods dependencies
-      - run: fastlane scan # Run tests using Fastlane
+      - run:
+            command: fastlane scan # Run tests using Fastlane
             environment:
                 SCAN_DEVICE: iPhone 11
              
